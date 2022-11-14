@@ -1,7 +1,12 @@
+import  { useState } from "react";
 function index() {
+  const [num, setNum] = useState(0);
   return (
-    <div><h1>this is first next js code</h1></div>
-  )
+    <>
+      <button onClick={() => setNum(num + 1)}>Click Me</button> <br />
+      <button onClick={() => setNum(num - 1)}>Click Me</button>
+      <p>{num}</p>
+    </>
+  );
 }
-
-export default index
+export default index;
