@@ -4,7 +4,15 @@ function index() {
   return (
     <>
       <button onClick={() => setNum(num + 1)}>Click Me</button> <br />
-      <button onClick={() => setNum(num - 1)}>Click Me</button>
+      <button onClick={() => {
+
+        if(num>0){
+          setNum(num - 1)
+        } else{
+          setNum(0);
+        }
+      }
+        }>Click Me</button>
       <p>{num}</p>
     </>
   );
