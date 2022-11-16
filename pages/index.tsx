@@ -1,8 +1,10 @@
 import  { useState } from "react";
+import Navbar from "../components/navbar";
 function index() {
   const [num, setNum] = useState(0);
   return (
     <>
+    <Navbar/>
       <button onClick={() => setNum(num + 1)}>Click Me</button> <br />
       <button onClick={() => {
 
