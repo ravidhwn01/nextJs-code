@@ -1,10 +1,10 @@
 import Navbar from "../components/navbar";
-
+import styles from '../styles/service.module.css'
 const Service = () => {
   return (
     <>
     <Navbar/>
-      <div>this is service page!</div>
+      <div className= {styles.header}>this is service page!</div>
     </>
   );
 };

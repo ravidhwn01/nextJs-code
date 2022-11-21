@@ -4,7 +4,8 @@ const home = () => {
   return (
   <>
     <Navbar/>
-    <div>home page!</div>
+    <div  style={{color:"green"} }>home page!</div>
+    {/* using inline css */}
   </>)
 };
 
